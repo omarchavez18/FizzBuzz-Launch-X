@@ -96,7 +96,7 @@ const fullFizzBuzz = function (explorer) {
     explorer.trick = "FIZZ";
     return explorer;
   } else {
-    explorer.trick = "TODO";
+    explorer.trick = explorer.score;
     return explorer;
   }
 };
