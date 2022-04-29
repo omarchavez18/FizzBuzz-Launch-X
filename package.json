@@ -19,5 +19,8 @@
   "homepage": "https://github.com/omarchavez18/FizzBuzz-Launch-X#readme",
   "devDependencies": {
     "jest": "^28.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
   }
 }
