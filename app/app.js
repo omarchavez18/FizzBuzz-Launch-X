@@ -1,8 +1,8 @@
-//const fs = require("fs");
+const fs = require("fs");
 
 // Part 1 Read json file ===========================
-// const rawdata = fs.readFileSync("explorers.json");
-// const explorers = JSON.parse(rawdata); // lista de explorers del archivo json
+const rawdata = fs.readFileSync("explorers.json");
+const explorers = JSON.parse(rawdata); // lista de explorers del archivo json
 
 //console.log("Hey I'm here!!");
 //console.log(explorers);
@@ -105,3 +105,5 @@ const explorersFullFizzBuzz = explorersInNode.map((explorer) =>
   fullFizzBuzz(explorer)
 );
 console.log(explorersFullFizzBuzz);
+
+module.exports = fullFizzBuzz;
