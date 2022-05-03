@@ -19,6 +19,6 @@ describe("testing fizzbuzz", () => {
     const ajolonauta3 = FizzbuzzService.applyValidationInExplorer(
       explorers[14]
     );
-    expect(ajolonauta3).toBe("FIZZBUZ");
+    expect(ajolonauta3).toBe("FIZZBUZZ");
   });
 });
