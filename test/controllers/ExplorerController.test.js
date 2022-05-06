@@ -11,4 +11,25 @@ describe("pruebas de Explorer Controller", () => {
             expect(persona.mission).toBe(personas[i].mission);
         });
     });
+
+    // test("prueba 2) obtener los nombres de los usuarios", () => {
+    //     const grupoExplorers = explorers.filter(
+    //         (explorer) => explorer.mission === "node"
+    //     );
+
+    //     const infoARevisar =
+    //   ExplorerController.getExplorersUsernamesByMission("node");
+    //     infoARevisar.forEach((personaDelGrupo) => {
+    //         expect(personaDelGrupo).toBe(grupoExplorers.githubUserName);
+    //     });
+    // });
+
+    // test("prueba 3) obtener la cantidad de usuarios", () => {
+    //     const personas = explorers.filter(
+    //         (explorer) => explorer.mission === "node"
+    //     );
+    //     const info = ExplorerController.getExplorersAmountByMission("node");
+
+    //     expect(info.length).toBe(personas.length);
+    // });
 });
