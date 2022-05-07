@@ -32,4 +32,6 @@ describe("pruebas de Explorer Controller", () => {
 
     //     expect(info.length).toBe(personas.length);
     // });
+
+    test("prueba 4) obtener 'fizz', 'buzz', 'fizzbuzz', o el mismo score con el number proporcionado", () => {});
 });
