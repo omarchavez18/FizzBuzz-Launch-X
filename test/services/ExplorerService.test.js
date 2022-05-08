@@ -1,6 +1,7 @@
 const ExplorerService = require("../../lib/services/ExplorersService");
 const explorers = require("../../explorers.json");
 
+/*obtener lista de explorers que solo esten en node */
 describe("prueba de ExplorerService.js", () => {
     test("prueba 1) Filter by Mission ", () => {
         const astronautas = explorers.filter(
