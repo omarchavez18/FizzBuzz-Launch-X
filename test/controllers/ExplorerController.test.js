@@ -21,21 +21,17 @@ describe("pruebas de Explorer Controller", () => {
     expect(personas).toEqual(gente);
   });
 
-  //     const infoARevisar =
-  //   ExplorerController.getExplorersUsernamesByMission("node");
-  //     infoARevisar.forEach((personaDelGrupo) => {
-  //         expect(personaDelGrupo).toBe(grupoExplorers.githubUserName);
-  //     });
-  // });
+  test("prueba 3) obtener la cantidad de explorers por la mision enviada", () => {
+    const amountExplorers = explorers.filter(
+      (explorer) => explorer.mission === "node"
+    );
 
-  // test("prueba 3) obtener la cantidad de usuarios", () => {
-  //     const personas = explorers.filter(
-  //         (explorer) => explorer.mission === "node"
-  //     );
-  //     const info = ExplorerController.getExplorersAmountByMission("node");
+    const cantExplorers =
+      ExplorerController.getExplorersAmountByMission("node");
+    console.log(cantExplorers);
 
-  //     expect(info.length).toBe(personas.length);
-  // });
+    expect(10).toBe(amountExplorers.length);
+  });
 
   //  test("prueba 4) obtener 'fizz', 'buzz', 'fizzbuzz', o el mismo score con el number proporcionado", () => {});
 });
