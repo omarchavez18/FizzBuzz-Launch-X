@@ -34,5 +34,8 @@ describe("pruebas de Explorer Controller", () => {
     );
   });
 
-  //  test("prueba 4) obtener 'fizz', 'buzz', 'fizzbuzz', o el mismo score con el number proporcionado", () => {});
+  test("prueba 4) obtener 'fizz', 'buzz', 'fizzbuzz', o el mismo score con el number proporcionado", () => {
+    const returnFizzBuzz = ExplorerController.applyFizzbuzz(15);
+    expect(returnFizzBuzz).toBe("FIZZBUZZ");
+  });
 });
