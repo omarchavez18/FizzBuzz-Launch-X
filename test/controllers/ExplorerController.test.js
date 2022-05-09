@@ -28,9 +28,10 @@ describe("pruebas de Explorer Controller", () => {
 
     const cantExplorers =
       ExplorerController.getExplorersAmountByMission("node");
-    console.log(cantExplorers);
 
-    expect(10).toBe(amountExplorers.length);
+    expect(cantExplorers).toBe(
+      `la cantidad de explorers son :${amountExplorers.length}`
+    );
   });
 
   //  test("prueba 4) obtener 'fizz', 'buzz', 'fizzbuzz', o el mismo score con el number proporcionado", () => {});
