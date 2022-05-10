@@ -1,7 +1,7 @@
 const express = require("express");
 const ExplorerService = require("./../lib/services/ExplorersService");
 const explorers = require("./../explorers.json");
-//const FizzbuzzService = require("./../lib/services/FizzbuzzService");
+const FizzbuzzService = require("./../lib/services/FizzbuzzService");
 const app = express();
 
 app.use(express.json());
@@ -34,12 +34,13 @@ app.get("/v1/explorers/usernames/:mission", (req, res) => {
     res.status(200).json(nombresDeUsuarios);
 });
 
-// app.get("/v1/explorers/:id", (req, res) => {
-//   const respuestaFizzBuzz = FizzbuzzService.applyValidationInExplorer(
-//     explorers[req.params.id]
-//   );
-//   res.status(200).json(respuestaFizzBuzz);
-// });
+//esta fallando
+app.get("/v1/explorers/:id", (req, res) => {
+    const respuestaFizzBuzz = FizzbuzzService.applyValidationInExplorer(
+        explorers[req.params.id]
+    );
+    res.status(200).json(respuestaFizzBuzz);
+});
 
 app.listen(port, () => {
     console.log("server listo!");
